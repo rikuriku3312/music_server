@@ -1,0 +1,94 @@
+/* 共通スタイル */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+
+button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: gray;
+}
+
+/* index.php */
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: white;
+}
+
+.admin {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+/* playlist.php のスタイル */
+ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.play-button {
+    order: -1;
+    margin-right: 10px;
+}
+
+li form {
+    margin-left: auto;
+}
+
+.audio-player {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: #222;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio-player .track-title {
+    flex: 1;
+    text-align: left;
+}
+
+.audio-player .controls {
+    flex: 1;
+    text-align: center;
+}
+
+.audio-player .progress {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-player .progress input[name="seekbar"] {
+    width: 300px;  /* シークバーの長さを調整 */
+}
+
+.audio-player span {
+    margin: 0 30px;
+}
